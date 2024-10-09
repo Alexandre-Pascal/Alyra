@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.27+commit.40a35a09"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Time.sol": "Time"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Time.sol": {
+			"keccak256": "0x527efc1f0003daded9807e8d176607bccf6ca75138aa72b27df91e91d3ecacee",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://c0f5802c9b25a7d2b707358141711b19b771119865e1dee2e997a5eacafb4329",
+				"dweb:/ipfs/QmQxEUZpW48LSSrSGUa4dGZtt3tBpWwbjgegny5xw1ownF"
+			]
+		}
+	},
+	"version": 1
+}
