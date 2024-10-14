@@ -27,11 +27,11 @@ contract Deviner is Ownable {
     constructor() Ownable(msg.sender){
     }
     
-    function setWord(string memory _word) external onlyOwner isWordNotSet{
+    function setWord(string calldata _word) external onlyOwner isWordNotSet{
         word = _word;
     }
 
-    function setClue(string memory _clue) external onlyOwner isWordSet {
+    function setClue(string calldata _clue) external onlyOwner isWordSet {
         clue = _clue;
     }
 
