@@ -22,6 +22,13 @@ describe('Test Voting', async function () {
             const state = await deployedContract.workflowStatus();
             assert(state == 0);
         });
+
+        it('Should not allow to revert back', async function () {
+            await deployedContract.startProposalsRegistering();
+            await deployedContract.endProposalsRegistering();
+            await expect(deployedContract.startProposalsRegistering()).to.be.revertedWith('Registering proposals cant be started now');
+        });
+        
     });
         
     describe('RegisteringVoters state', async function () {
